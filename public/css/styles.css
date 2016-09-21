@@ -1,0 +1,39 @@
+body {
+	background-color: #221619;
+}
+main {
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 15px;
+}
+.instructions {
+	color: #F8F8FF;
+}
+.lock1 {
+	background-color: #FFC125;
+	width: 200px;
+	height: 50px;
+	margin: 40px;
+	padding: 25px;
+	border-radius: 25px;
+}
+
+.lock1 form select {
+	border-radius: 15px;
+	font-size: 200%;
+	text-align: center;
+	margin-right: 10px;
+}
+button {
+	margin-top: 40px;
+	font-size: 200%;
+	border-radius: 5px;
+	padding: 0px 10px;
+}
+footer {
+	color: #F8F8FF;
+	position:absolute;
+	padding-bottom: 5px;
+	width: 100%;
+	bottom: 0px;
+}
