@@ -7,12 +7,12 @@ app.config(function($routeProvider) {
 		templateUrl: 'html/lock1.html',
 		controller: 'firstCtrl'
 	})
-	.when ('/about',
+	.when ('/lock2',
 	{
 		templateUrl: 'html/lock2.html',
 		controller: 'secondCtrl'
 	})
-	.when('/testimonials',
+	.when('/lock3',
 	{
 		templateUrl: 'html/lock3.html',
 		controller: 'thirdCtrl'
