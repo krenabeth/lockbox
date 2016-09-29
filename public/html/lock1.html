@@ -1,7 +1,21 @@
-<h1 class="instructions">You have 7 minutes to unlock...</h1>
+<h1 class="instructions">You have 1 hour to unlock...</h1>
+<div class="toplock1"></div>
 <div class="lock1">
+
 	<form >
 		<select ng-model="lock1.select1st" size="1">
+			<option value="0" selected>0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+		</select>
+		<select ng-model="lock1.select2nd" size="1" type="number">
 			<option value="0">0</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
@@ -13,19 +27,7 @@
 			<option value="8">8</option>
 			<option value="9">9</option>
 		</select>
-		<select ng-model="lock1.select2nd" size="1">
-			<option value="0">0</option>
-			<option value="1">1</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5</option>
-			<option value="6">6</option>
-			<option value="7">7</option>
-			<option value="8">8</option>
-			<option value="9">9</option>
-		</select>
-		<select ng-model="lock1.select3rd" size="1">
+		<select ng-model="lock1.select3rd">
 			<option value="0">0</option>
 			<option value="1">1</option>
 			<option value="2">2</option>
@@ -39,6 +41,6 @@
 		</select>
 	</form>
 	<div>
-		<button type="submit" ng-click="solve(lock1)" class="submit">Submit</button>
+		<button type="submit" ng-click="solve(lock1)" class="submit">Go!</button>
 	</div>
 </div>
