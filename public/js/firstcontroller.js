@@ -1,16 +1,12 @@
 var app = angular.module('lockApp');
 
 app.controller('firstCtrl', ['$scope', '$location', function($scope, $location){
-	
+	window.alert('Please select three numbers on the lock, then click Go!');
+
 	$scope.solve = function(lock1) {
 		var one = true;
 		var two = true;
 		var three = true;
-
-		// when not all three are selected, alert once!
-		// if (lock1.select1st !== true) {
-		// 	window.alert('Please select three numbers on the lock, then click Go!');
-		// } 
 
 		if (lock1.select1st === "0") {
 		} else {
