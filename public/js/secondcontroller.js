@@ -1,10 +1,10 @@
 var app = angular.module('lockApp');
 
 app.controller('secondCtrl', ['$scope', '$http', '$location', function($scope, $http, $location){
-
-	$http.get('../userinfo/user.json').success(function(data) {
-		$scope.user = data;
-	});
+	var userPhone = [2,4,8,2,1,0,9,4,7,2]
+	// $http.get('user.json').success(function(data) {
+	// 	var user = data;
+	// });
 
 	$scope.today = function date() {
 		var date = Date.now();
@@ -24,11 +24,12 @@ app.controller('secondCtrl', ['$scope', '$http', '$location', function($scope, $
 			console.log(phone);
 
 			for (var i = 0; i < 10; i++) {
-				if (phone[i] !== user.Phone[i]) {
+				if (phone[i] !== userPhone[i]) {
 					window.alert('Nope, sorry. Hint: You could call home for a clue... try again!');
 					return phone = [];
 				} else {
 					hooray = true;
+					console.log('hooray!');
 				}
 
 			}
