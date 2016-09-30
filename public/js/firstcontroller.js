@@ -1,7 +1,13 @@
 var app = angular.module('lockApp');
 
 app.controller('firstCtrl', ['$scope', '$location', function($scope, $location){
-	window.alert('Please select three numbers on the lock, then click Go!');
+
+
+	swal({  
+		title: "Welcome!",   
+		text: "Please select three numbers on the lock, then click Go!",   
+		type: "info",   
+		confirmButtonText: "Ok" });
 
 	$scope.solve = function(lock1) {
 		var one = true;
@@ -22,20 +28,36 @@ app.controller('firstCtrl', ['$scope', '$location', function($scope, $location){
 		}
 	// now check if there are 3 trues
 		if (one && two && three) {	
-			window.alert('Congratulations!');
+			swal({  
+				title: "Congratulations!",   
+				text: "You got it! Click 'Ok' for the next lock.",   
+				type: "info",   
+				confirmButtonText: "Ok" });
 			// change path to lock2
 			
 			$location.path('/lock2');
 
 		} else if (one && two || two && three || one && three){
 			// 2 trues	
-			window.alert('So close! You got TWO numbers correct. Hint: you are a spy, a double agent... Try again!');
+			swal({  
+				title: "So close!",   
+				text: "You got TWO numbers correct. Hint: you are a spy, a double agent... Try again!",   
+				type: "info",   
+				confirmButtonText: "Ok" });
 		} else if (one || two || three) {
 			// 1 true
-			window.alert('Alright! You got ONE number correct. Hint: How old are you?  ... Try again!');
+			swal({  
+				title: "Alright!",   
+				text: "You got ONE number correct. Hint: How old are you?  ... Try again!",   
+				type: "info",   
+				confirmButtonText: "Ok" });
 		} else {
 			// 0 trues
-			window.alert('Oh no! You got ZERO numbers correct. Hint: *zero* ... Try again!');
+			swal({  
+				title: "Oh no!",   
+				text: "You got ZERO numbers correct. Hint: *zero* ... Try again!",   
+				type: "info",   
+				confirmButtonText: "Ok" });
 		}
 			
 	};
