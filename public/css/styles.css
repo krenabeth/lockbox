@@ -29,6 +29,32 @@
 .lock2 h2, p {
   color: white; }
 
+h2 {
+  color: white; }
+
+.drei form {
+  text-align: left;
+  float: left;
+  margin-left: 3%; }
+
+input {
+  width: 40px;
+  height: 30px; }
+
+.lock3 {
+  background-color: #e5dba7;
+  width: 75px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 20px;
+  border: 15px solid black;
+  border-style: outset;
+  box-shadow: 2px 2px 2px #ccc; }
+
+.thirdRight {
+  float: right; }
+
 body {
   background-color: #221619; }
 
