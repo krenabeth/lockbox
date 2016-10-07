@@ -21,20 +21,25 @@ app.controller('secondCtrl', ['$scope', '$http', '$location', function($scope, $
 
 		// check all nine numbers
 		if (phone.length === 10) {
-			console.log(phone);
-
 			for (var i = 0; i < 10; i++) {
 				if (phone[i] !== userPhone[i]) {
-					window.alert('Nope, sorry. Hint: You could call home for a clue... try again!');
+				swal({  
+					title: "Nope, sorry.",   
+					text: "Hint: Call home for a clue... try again!",   
+					type: "info",   
+					confirmButtonText: "Ok" });
+					
 					return phone = [];
 				} else {
 					hooray = true;
-					console.log('hooray!');
 				}
-
 			}
 			if (hooray) {
-				window.alert('Congratulations!');
+				swal({  
+					title: "Congratulations!",   
+					text: "Click Ok to move on to the next lock!",   
+					type: "info",   
+					confirmButtonText: "Ok" });
 				// change path to lock3
 				$location.path('/lock3');
 			}
