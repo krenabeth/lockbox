@@ -17,5 +17,10 @@ app.config(function($routeProvider) {
 		templateUrl: 'html/lock3.html',
 		controller: 'thirdCtrl'
 	})
+	.when('/lock4',
+	{
+		templateUrl: 'html/lock4.html',
+		controller: 'fourthCtrl'
+	})
 	.otherwise({ redirectTo: '/'})
 });
