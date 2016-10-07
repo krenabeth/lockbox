@@ -2,13 +2,6 @@ var app = angular.module('lockApp');
 
 app.controller('firstCtrl', ['$scope', '$location', function($scope, $location){
 
-
-	swal({  
-		title: "Welcome!",   
-		text: "Please select three numbers on the lock, then click Go!",   
-		type: "info",   
-		confirmButtonText: "Ok" });
-
 	$scope.solve = function(lock1) {
 		var one = true;
 		var two = true;
